@@ -1,0 +1,30 @@
+PROFIT OR LOSS
+
+
+A fruit seller buys a dozen of banana at Rs. X. He sells 1 banana at Rs. Y. Write a program to determine the profit or loss in Rs. for the fruit seller.
+
+Input format:
+ Input consists of two floating numbers 
+ The first input corresponds to total cost of X
+ The second input corresponds to sold cost of Y
+
+CODE:
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+        float x = scn.nextFloat();
+        float y = scn.nextFloat();
+        if (x > (y*12)){
+            System.out.println("Loss");
+            float z = x-(y*12);
+            System.out.printf("%.2f" ,z);
+        }
+        else{
+            System.out.println("Profit");
+            float a = (y*12)-x;
+            System.out.printf("%.2f" ,a);
+        }
+    }
+}

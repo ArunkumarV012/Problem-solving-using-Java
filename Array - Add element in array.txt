@@ -1,0 +1,38 @@
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter the size of an Array: ");
+        int size = sc.nextInt();
+
+        int arr[] = new int[size];
+
+        for(int i=0; i<size; i++) {
+            int k = sc.nextInt();
+            arr[i] = k;
+        }
+
+        int newArr[] = new int[size+1];
+
+        System.out.print("Enter number; ");
+        int number = sc.nextInt();
+        System.out.print("Enter index; ");
+        int index = sc.nextInt();
+
+        for(int i=0; i<index; i++) {
+            newArr[i] = arr[i];
+        }
+        newArr[index] = number;
+        for(int i=index+1; i<size; i++) {
+            newArr[i] = arr[i-1];
+        }
+
+        for(int i:newArr) {
+            System.out.print(i + " ");
+        }
+
+
+    }
+}

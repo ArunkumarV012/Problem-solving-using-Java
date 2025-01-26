@@ -1,0 +1,15 @@
+PRINTING 10 TO 1 BY USING DO-WHILE
+
+
+import java.util.Scanner;
+class  demo {
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int i= 11;
+        do{
+            i--;
+            System.out.println(i);
+        }
+        while(i>1);{}
+    }
+}

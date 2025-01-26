@@ -1,0 +1,29 @@
+SWAPPING OF TWO NUMBERS WITHOUT TEMPORARY
+
+
+Write a program to get 2 numbers from the user and swap their values without any loss of data without third variable for swapping. Print the corresponding swapped values of the two numbers as output in the console.
+Input format:
+  first input : an integer
+  second input : an integer
+Output format:
+  The output will be swapped
+
+CODE:
+ 
+import java.util.Scanner;
+public class j {
+    public static void main(String[]args){
+        Scanner scn = new Scanner (System.in);
+        int a = scn.nextInt();
+        int b = scn.nextInt();
+        System.out.println("Before swapping");
+        System.out.println(a);
+        System.out.println(b);
+        a = a+b;
+        b = a-b;
+        a = a-b;
+        System.out.println("After swapping");
+        System.out.println(a);
+        System.out.println(b);
+    }
+}

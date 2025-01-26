@@ -1,0 +1,23 @@
+LEAP YEAR OR NOT 
+
+
+Ask a user for their birth year as two digit (like 62) and for the current year two digit (like 99). Write a program to find the user current age in years.
+
+CODE:
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+        int a = scn.nextInt();
+        int b = scn.nextInt();
+        int century = (100-a) + b;
+        int year = b-a;
+        if(a>b){
+            System.out.println(century);
+        }
+        else{
+            System.out.println(year);
+        }
+    }
+}

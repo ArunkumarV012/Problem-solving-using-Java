@@ -1,0 +1,31 @@
+SPEED AND DISTANCE
+
+
+We are driving down the street and see a green traffic light ahead. Because we know precisely the pattern of this traffic light, we wish to compute if we will pass the traffic light before it turns red at our current speed. Write a program to check if we will neat the light or not with the current speed.
+
+Input format :
+ The first input contains the floating point number which denotes the current speed in  miles per hour.
+ The second input contains the floating point number which denotes the distance to the light in miles.
+ the third input contains the floating point number which denotes the time until it turns red in seconds.
+
+
+CODE:
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+        float speed= scn.nextFloat();
+        float distance= scn.nextFloat();
+        float time= scn.nextFloat();
+        double sec = speed/3600.00;
+        double tt = distance/sec;
+        if(tt<time){
+            System.out.println("You can cross");
+        }
+        else{
+            System.out.println("You cannot cross");
+        }
+
+    }
+}

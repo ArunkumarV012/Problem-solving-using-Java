@@ -1,0 +1,36 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter the number of booking ticket: ");
+        int n = sc.nextInt();
+
+        double ticketPrice = 0;
+
+        for(int i=0; i<n; i++) {
+            int age = sc.nextInt();
+            if(age>60) {
+                ticketPrice += 30;
+            }
+            else if(age<12) {
+                ticketPrice += 20;
+            }
+            else {
+                ticketPrice += 50;
+            }
+        }
+
+        if(ticketPrice>300) {
+            double discount = 0.05*ticketPrice;
+            ticketPrice = ticketPrice - discount;
+            System.out.println("Your total cost is : " + ticketPrice);
+        }
+        else {
+            System.out.println("Your total cost is : " + ticketPrice);
+        }
+
+    }
+}
