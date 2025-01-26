@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Enter your First Number: ");
+        int a = sc.nextInt();
+        
+        System.out.print("Enter your Second Number: ");
+        int b = sc.nextInt();
+        
+        System.out.print("Enter your Third Number: ");
+        int c = sc.nextInt();
+        
+        if (a>b && a>c) {
+            System.out.println("The greatest Number is: " + a);
+        }
+        else if(b>a && b>c) {
+            System.out.println("The greatest Number is: " + b);
+        }
+        else {
+            System.out.println("The greatest Number is: " + c);
+        }
+        
+        sc.close();
+    }
+}

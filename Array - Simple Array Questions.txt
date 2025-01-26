@@ -1,0 +1,141 @@
+/* 1) Create an Array and print the array
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		
+		int a[] = new int[n];
+		
+		for(int i=0; i<n; i++) {
+		    a[i] = sc.nextInt();
+		}
+		
+		for(int j:a) {
+		    System.out.print(j + " ");
+		}
+		
+	}
+}
+
+2) Sort the array without using any Arrays.sort() method
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int a[] = new int[n];
+        
+        for(int i=0; i<n; i++) {
+            a[i] = sc.nextInt();
+        }
+        
+        for(int i=0; i<n; i++) {
+            for(int j=1; j<i+1; j++) {
+                if(a[i]<a[j]) {
+                    int temp = a[j];
+                    a[j] = a[i];
+                    a[i] = temp;
+                }
+            }
+        }
+        
+        for(int j:a) {
+            System.out.print(j);
+        }
+        
+    }
+}
+
+3) Find min & max element in the given array
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int a[] = new int[n];
+        
+        for(int i=0; i<n; i++) {
+            a[i] = sc.nextInt();
+        }
+        
+        for(int i=0; i<n; i++) {
+            for(int j=1; j<i+1; j++) {
+                if(a[i]<a[j]) {
+                    int temp = a[j];
+                    a[j] = a[i];
+                    a[i] = temp;
+                }
+            }
+        }
+        
+        int min = a[0];
+        inrt max = a[a.length-1];
+        
+        System.out.println(min);
+        System.out.println(max);
+        
+    }
+}
+
+4) Sum of the elements in the array
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int a[] = new int[n];
+        
+        for(int i=0; i<n; i++) {
+            a[i] = sc.nextInt();
+        }
+        
+        int sum = 0;
+        
+        for(int j:a) {
+            sum += j;
+        }
+        
+        System.out.println(sum);
+        
+    }
+}
+
+5) Revers an array 
+  
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        
+        int a[] = new int[n];
+        
+        for(int i=0; i<n; i++) {
+            a[i] = sc.nextInt();
+        }
+        
+        for(int j=a.length-1; j>=0; j--) {
+            System.out.print(a[j] + " ");
+        }
+        
+    }
+}
+
+*/
+

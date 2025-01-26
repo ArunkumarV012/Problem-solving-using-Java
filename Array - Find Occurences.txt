@@ -1,0 +1,74 @@
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		
+		int a[] = new int[n];
+		
+		for(int i=0; i<n; i++) {
+		    a[i] = sc.nextInt();
+		}
+		
+		for(int i=0; i<a.length; i++) {
+		    int count = 0;
+		    boolean isDuplicate = false;
+		    
+		    for(int j=0; j<i; j++) {
+		        if(a[i] == a[j]) {
+		            isDuplicate = true;
+		            break;
+		        }
+		    }
+		    
+		    if(isDuplicate == false) {
+		        
+		        for(int k=0; k<a.length; k++) {
+		            if(a[i] == a[k]) {
+		                count++;
+		            }
+		        }
+		        
+		        if(count > 1) {
+		            System.out.print("Elements : " + a[i] +  for(int i=0; i<array.length; i++) {
+            int count = 0;
+
+            for(int j=0;j<array.length; j++) {
+                if(array[i] == array[j]) {
+                    count++;
+                }
+            }
+            if(count > 1) {
+                System.out.print("Element : " + array[i] + "\nIndices : ");
+
+                int c = 0;
+                for(int k=0; k<array.length; k++) {
+                    if(array[i] == array[k]) {
+                        if(c>0) {
+                            System.out.print(", ");
+                        }
+                        System.out.print(k);
+                        c++;
+                    }
+                }
+                System.out.println("\nTotal Occurrences: " + count);
+                
+            }
+
+        }
+
+)
+		        }
+		        
+		    }
+		    
+		    
+		}
+		
+		
+		
+	}
+}
