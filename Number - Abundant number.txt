@@ -1,0 +1,23 @@
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        int factors_count = 1;
+
+        for(int i=2; i<n; i++) {
+            if(n%i == 0) {
+                factors_count += i;
+            }
+        }
+
+        if(factors_count>n) {
+            System.out.println("It is a Abundant number");
+        }
+        else {
+            System.out.println("NNo, it is not a Abundant Number");
+        }
+    }
+}

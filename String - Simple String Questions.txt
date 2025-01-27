@@ -1,0 +1,57 @@
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the first String: ");
+        String s = sc.nextLine();
+  /*
+
+     1) String converted to char using array
+
+        char a[] = s.toCharArray();
+        for(char b:a) {
+            System.out.print(b + " ");
+        }
+        System.out.println();
+
+    2) Find the char in the given index value
+
+        System.out.print("Enter the index number: ");
+        int index = sc.nextInt();
+
+        System.out.println(s.charAt(index));
+
+
+     3) Find the vowels count
+
+    String b = s.replaceAll("[aeiouAEIOU]", "*");
+      int count = 0;
+        for(int i=0; i<s.length(); i++) {
+            if(b.charAt(i) == '*') {
+                count++;
+            }
+        }
+
+        System.out.println(count);
+
+     4) Remove the vowel or only print consonent letter
+
+        String b = s.replaceAll("[aeiouAEIOU]", "");
+        System.out.println(b);
+
+        // another method using array
+
+        char a[] = s.toCharArray();
+        System.out.print(Arrays.toString(a));
+
+     5) change the str into Uppercase and lowercase
+
+        String u = s.toUpperCase();
+        System.out.println(u);
+
+        String l = s.toLowerCase();
+        System.out.println(l);
+
+   */
+    }
+}
