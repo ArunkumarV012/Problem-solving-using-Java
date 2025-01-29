@@ -1,0 +1,24 @@
+AUTOMORPHIC NUMBER
+
+
+import java.util.Scanner;
+class  automorphic {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+       int n=sc.nextInt();
+       int a=n*n;
+       while(n>0){
+           if(n%10!=a%10){
+               System.out.println("Not automorphic");
+               break;
+           }
+
+           n=n/10;
+           a=a/10;
+
+           if(n==0){
+               System.out.println("Automorphic");
+           }
+           }
+       }
+    }

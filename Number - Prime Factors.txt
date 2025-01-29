@@ -1,0 +1,21 @@
+PRIME FACTOR
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number:");
+        int a = sc.nextInt();
+        int max = 1;
+
+        for (int i = 2; i <= a; i++) {
+            while (a % i == 0) {
+                max = i;
+                a =a/i;
+            }
+        }
+
+        System.out.println("The highest prime factor is: " + max);
+    }
+}

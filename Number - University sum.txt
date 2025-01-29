@@ -1,0 +1,32 @@
+A university publishes a register number of toppers of the college for last four years. But there may be a chance of publishing the numbers that may not be a topper's register number. Write a program to check whether the given number is topper's or not. The condition is that the sum of even numbers in the given number is equal to the sum of odd numbers in the given number.
+
+Sample inputs : 6132785 , 567890 , 6543213
+
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b=0;
+        int c=0;
+        int d =0;
+            while(a>0){
+                b=a%10;
+                if(b%2==0){
+                    c=c+b;
+                }
+                else{
+                    d=d+b;
+                }
+                a=a/10;
+            }
+
+        if(c==d){
+            System.out.println("Yes");
+        }
+        else{
+            System.out.println("No");
+        }
+    }
+}

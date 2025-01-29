@@ -1,0 +1,30 @@
+FRIENDLY BACK NUMBERS
+
+
+import java.util.Scanner;
+
+public class friendly_back {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = 0;
+        int d = 0;
+        for(int i=1;i<a;i++){
+            if(a%i==0){
+                c=c+i;
+            }
+        }
+        for(int i =1;i<b;i++){
+            if(b%i==0){
+                d=d+i;
+            }
+        }
+        if((c/a==d/b)&&(c%a==d%b)){
+            System.out.println("Friendly back");
+        }
+        else{
+            System.out.println("Not");
+        }
+    }
+}

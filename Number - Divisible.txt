@@ -1,0 +1,24 @@
+DIVISIBLE 
+
+Write a program to check the given number is divisible by 7 and 11 or only by 7 or only by 11 or not.
+
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+        int a = scn.nextInt();
+        if (a%7==0 && a%11==0) {
+            System.out.println(a +" is divisible by both the numbers");
+        }
+        else if(a%7==0 && a%11!=0) {
+            System.out.println(a +" is divisible by only 7");
+        }
+        else if(a%11==0 && a%7!=0){
+            System.out.println(a +" is divisible by only 11");
+        }
+        else{
+            System.out.println(a +" is not divisible by both 7 and 11");
+        }
+    }
+}
