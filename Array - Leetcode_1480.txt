@@ -1,0 +1,15 @@
+public class LC_1480 {
+    public static void main(String[] args) {
+        int a[] = {1,2,3,4};
+        int sum = 0;
+        for(int i=0; i<a.length; i++) {
+            for(int j=0; j<=i; j++) {
+                sum += a[j];
+            }
+            a[i] = sum;
+        }
+        for(int z:a) {
+            System.out.println(z);
+        }
+    }
+}

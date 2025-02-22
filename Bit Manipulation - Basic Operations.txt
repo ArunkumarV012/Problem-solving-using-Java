@@ -1,0 +1,11 @@
+public class Bit_man1 {
+    public static void main(String[] args) {
+        System.out.println("The And operation of the number is: " + (10&16));
+        System.out.println("The Or operation of the number is: " + (10|16));
+        System.out.println("The Xor operation of the number is: " + (10^16));
+        System.out.println("The Left shift operation of the number is: " + (9 << 1));
+        System.out.println("The Left shift operation of the number is: " + (12 << 5));
+        System.out.println("The Left shift operation of the number is: " + (12 >> 2));
+
+    }
+}

@@ -1,0 +1,18 @@
+import java.util.*;
+public class intToBinaryRecursion {
+
+    static String bin(int n, String b) {
+        if(n == 0) {
+            return b;
+        }
+        b = n%2+b;
+        return bin(n/2, b);
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        String b = "";
+        System.out.println(bin(n, b));
+    }
+}

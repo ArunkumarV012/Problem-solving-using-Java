@@ -1,0 +1,15 @@
+public class fibo {
+
+    public static int fi(int a) {
+        if(a<=1) {
+            return a;
+        }
+        int b = fi(a-1) + fi(a-2);
+        return b;
+    }
+
+    public static void main(String[] args) {
+        System.out.print(fi(10));
+    }
+
+}
